@@ -7,6 +7,7 @@ export default function App() {
     <View style={styles.mainStyle}>
       <Header />
       <Page />
+      <Header />
     </View>
   );
 }
