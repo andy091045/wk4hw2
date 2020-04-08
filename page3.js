@@ -19,7 +19,7 @@ const Page2 = () => {
                 </View>
 
                 <View>
-                    <Text style={styles.text3Style}>Street art is colorful, vibrant, <br />diverse and exciting.Now, you can <br />create…</Text>
+                    <Text style={styles.text3Style}>Street art is colorful, vibrant, diverse and exciting.Now, you can create…</Text>
                 </View>
 
                 <View style={styles.pageBarStyle}></View>
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: "#ddd",
         height: 170,
-        width: 360
+        paddingBottom: 20,
     },
     pagePhotoStyle: {
         padding: 3,
@@ -70,24 +70,26 @@ const styles = StyleSheet.create({
     },
     text1Style: {
         fontSize: 18,
-        fontFamily: "Roboto",
+
         fontStyle: "normal",
         color: "#2e2e2e",
     },
     text2Style: {
         paddingTop: 11,
         fontSize: 14,
-        fontFamily: "Roboto",
+
         fontStyle: "normal",
         color: "#717171",
     },
     text3Style: {
         paddingTop: 11,
         paddingBottom: 11,
+        paddingRight: 180,
         fontSize: 12,
-        fontFamily: "Roboto",
+
         fontStyle: "normal",
         color: "#b1b1b1",
+
     }
 
 

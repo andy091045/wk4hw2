@@ -5,12 +5,12 @@ const Header = () => {
         <View style={styles.headerStyle}>
             <Image
                 style={styles.iconStyle}
-                source={{ uri: 'https://cdn.zeplin.io/5e6edfd117dbf813ddad315b/assets/77708ADD-D59B-4BF8-A8BD-F1606D93342F.svg' }}
+                source={require('./img/menu.png')}
             />
             <Text style={styles.textStyle}>My Book</Text>
             <Image
                 style={styles.iconStyle}
-                source={{ uri: 'https://cdn.zeplin.io/5e6edfd117dbf813ddad315b/assets/710661D2-0E48-47E8-82D7-6662CF3CB481.svg' }}
+                source={require('./img/search.png')}
             />
         </View>
     );
@@ -22,19 +22,22 @@ const styles = StyleSheet.create({
         backgroundColor: "#00b49f",
         flexDirection: "row",
         justifyContent: "space-between",
-        alignItems: "center",
-        height: 56,
-        width: 360
+        alignItems: "flex-end",
+        paddingBottom: 20,
+        height: 80,
+
     },
     textStyle: {
         color: "#F8F8F8",
         fontSize: 20,
-        fontFamily: "Roboto",
+        fontWeight: 'bold',
 
     },
     iconStyle: {
-        height: 40,
-        width: 40
+        marginLeft: 15,
+        marginRight: 15,
+        height: 20,
+        width: 20
     }
 
 });

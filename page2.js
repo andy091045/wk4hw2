@@ -19,15 +19,15 @@ const Page2 = () => {
                 </View>
 
                 <View>
-                    <Text style={styles.text3Style}>Twenty-six years ago Hannah had<br /> her eye shot out. Now she wants…</Text>
+                    <Text style={styles.text3Style}>Twenty-six years ago Hannah had her eye shot out. Now she wants…</Text>
                 </View>
 
                 <View style={styles.pageBarStyle}></View>
 
-                <View style={styles.pagePhoto2Style}>
+                <View style={styles.iconP2}>
                     <Image
                         style={styles.Photo2Style}
-                        source={{ uri: 'https://cdn.zeplin.io/5e6edfd117dbf813ddad315b/assets/D191A01A-2326-4D19-8F01-FC0C145F6BD8.svg' }}
+                        source={require('./img/btn_start.png')}
                     />
                 </View>
             </View>
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: "#ddd",
         height: 170,
-        width: 360
+
     },
     pagePhotoStyle: {
         padding: 3,
@@ -75,19 +75,20 @@ const styles = StyleSheet.create({
         height: 140,
     },
     Photo2Style: {
-        width: 82,
-        height: 21
+        paddingTop: 11,
+        width: 80,
+        height: 20
     },
     text1Style: {
         fontSize: 18,
-        fontFamily: "Roboto",
+
         fontStyle: "normal",
         color: "#2e2e2e",
     },
     text2Style: {
         paddingTop: 11,
         fontSize: 14,
-        fontFamily: "Roboto",
+
         fontStyle: "normal",
         color: "#717171",
     },
@@ -95,9 +96,12 @@ const styles = StyleSheet.create({
         paddingTop: 11,
         paddingBottom: 11,
         fontSize: 12,
-        fontFamily: "Roboto",
+        paddingRight: 160,
         fontStyle: "normal",
         color: "#b1b1b1",
+    },
+    iconP2: {
+        marginTop: 10
     }
 
 

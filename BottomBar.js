@@ -6,15 +6,15 @@ const BottomBar = () => {
         <View style={styles.viewStyle}>
             <View style={styles.box}>
                 <View style={styles.center}>
-                    <Image style={styles.Home} source={{ uri: 'https://cdn.zeplin.io/5e6edfd117dbf813ddad315b/assets/5E29B3A7-7F57-4AD3-9F70-2634391141EC.svg' }} />
+                    <Image style={styles.Home} source={require('./img/icon_bottomnav_home.png')} />
                     <Text style={styles.word}>Home</Text>
                 </View>
                 <View style={styles.center}>
-                    <Image style={styles.book} source={{ uri: 'https://cdn.zeplin.io/5e6edfd117dbf813ddad315b/assets/777B1589-D20B-4250-8DBE-DA5773259E9D.svg' }} />
+                    <Image style={styles.book} source={require('./img/icon_bottomnav_mybook.png')} />
                     <Text style={styles.word}>My book</Text>
                 </View>
                 <View style={styles.center}>
-                    <Image style={styles.Favorites} source={{ uri: 'https://cdn.zeplin.io/5e6edfd117dbf813ddad315b/assets/7E8351E3-0B87-4604-881B-B2E021F29798.svg' }} />
+                    <Image style={styles.Favorites} source={require('./img/icon_bottomnav_favorites.png')} />
                     <Text style={styles.word}>Favorites</Text>
                 </View>
             </View>
@@ -25,10 +25,11 @@ const BottomBar = () => {
 const styles = StyleSheet.create({
     viewStyle: {
         elevation: 2,
+        marginTop: 11,
     },
     box: {
         backgroundColor: '#ffffff',
-        height: 80,
+        height: 50,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-around',
@@ -37,23 +38,23 @@ const styles = StyleSheet.create({
         paddingBottom: 15
     },
     word: {
-        fontFamily: 'Roboto',
-        fontSize: 16,
+
+        fontSize: 12,
         color: '#818181',
         lineHeight: 20,
 
     },
     Home: {
-        width: 40,
-        height: 40,
+        width: 24,
+        height: 24,
     },
     book: {
-        width: 40,
-        height: 40,
+        width: 24,
+        height: 24,
     },
     Favorites: {
-        width: 40,
-        height: 40,
+        width: 24,
+        height: 24,
     },
     center: {
         alignItems: 'center',

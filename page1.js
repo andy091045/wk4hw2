@@ -19,7 +19,7 @@ const Page1 = () => {
                 </View>
 
                 <View>
-                    <Text style={styles.text3Style}>If you were told the date of your<br /> death, how would it shape your…</Text>
+                    <Text style={styles.text3Style}>If you were told the date of your death, how would it shape your…</Text>
                 </View>
 
                 <View style={styles.pageBarStyle}></View>
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: "#ddd",
         height: 170,
-        width: 360
+
     },
     pagePhotoStyle: {
         padding: 3,
@@ -70,14 +70,14 @@ const styles = StyleSheet.create({
     },
     text1Style: {
         fontSize: 18,
-        fontFamily: "Roboto",
+
         fontStyle: "normal",
         color: "#2e2e2e",
     },
     text2Style: {
         paddingTop: 11,
         fontSize: 14,
-        fontFamily: "Roboto",
+
         fontStyle: "normal",
         color: "#717171",
     },
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
         paddingTop: 11,
         paddingBottom: 11,
         fontSize: 12,
-        fontFamily: "Roboto",
+        paddingRight: 160,
         fontStyle: "normal",
         color: "#b1b1b1",
     }
